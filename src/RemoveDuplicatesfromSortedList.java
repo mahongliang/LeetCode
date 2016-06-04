@@ -37,7 +37,7 @@ public class RemoveDuplicatesfromSortedList {
 		ListNode current = head;
 		while (current != null && current.next !=null) {
 			if (current.val == current.next.val) {
-				current = current.next.next;
+				current.next = current.next.next;
 			}else {
 				current = current.next;
 			}		
